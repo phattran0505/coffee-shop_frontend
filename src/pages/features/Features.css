@@ -1,0 +1,9 @@
+.features-section {
+    background-color: var(--bg-color);
+    padding-block: 100px;
+}
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.25rem;
+}

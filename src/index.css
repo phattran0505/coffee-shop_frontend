@@ -1,13 +1,164 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* ===== Tablet ======== */
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@media screen and (min-width:767px) and (max-width: 1024px) {
+    section {
+        padding: 100px 80px;
+    }
+    .container {
+        max-width: 960px;
+    }
+    /* ====== header ===== */
+    header {
+        padding: 15px 80px;
+    }
+    /* ====== about section ===== */
+    .about-img {
+        margin-bottom: 2.5rem;
+    }
+    /* ======== features section ====== */
+    .features-section .features-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    /* =======  stat section ======= */
+    .stat-container  {
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 3rem;
+    }
+    /* ======== gallery section ======= */
+    .gallery-container {
+        grid-template-columns: repeat(2,1fr);
+    }
+    /* ===== offer section ====== */
+    .slide-img {
+        width: 100%;
+    }
+    .slide-offer {
+        width: 300px;
+        right: 30px
+    }
+    .slide-offer .slide-content {
+        padding: 1.5rem .75rem;
+    }
+    .slide-offer .slide-content .offer-description {
+        margin-bottom: .5rem;
+    }
+    .slide-offer .slide-content button {
+        padding: .5rem 1rem;
+    }
+
+    /* ======== chef section =======*/
+    .chefs {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    /* ======== testimonial section ==========*/
+    .testimonial-description , .testimonial-content {
+        padding: 1rem;
+    }
+
+    /* ======= footer ========== */
+    .footer-section .footer-container {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .center{
+        margin: 1.5rem 0;
+    }
+}   
+/* ======== Mobile ======== */
+@media screen and (max-width: 767px) {
+    :root {
+        --largest-font-size: 1.25rem;
+        --larger-font-size: 1.125rem;
+        --large-font-size: 1rem;
+        --normal-font-size: 0.8rem;
+        --h1-font-size: 1.5rem;
+        --h2-font-size: 1.375rem;
+        --h3-font-size: 1.25rem;
+    }
+    section {
+        padding: 100px 50px;
+    }
+    .btn {
+        padding: .5rem 1rem;
+    }
+    .container {
+        max-width: 960px;
+    }
+    /* ====== header ===== */
+    header {
+        padding: 15px 50px;
+    }
+    .links {
+        display: none;
+    }
+    .sub-menu{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        flex-direction: column;
+    }
+    /* ====== about section ===== */
+    .about-img {
+        margin-bottom: 2.5rem;
+    }
+    /* ======== features section ====== */
+    .features-section .features-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    /* ======= gallery section ======= */
+    .gallery-container {
+        grid-template-columns: repeat(1,1fr);
+    }
+    /* =======  stat section ======= */
+    .stat-container  {
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 3rem;
+    }
+    /* ========== offer section ======= */
+    .slide {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1.5rem;
+    }
+    .slide-img {
+        width: 100%;
+    }
+    .slide-offer {
+        width: 100%;
+        right: 0;
+    }
+    /* =========== chefs section ======== */
+    .chefs {
+        grid-template-columns: repeat(1,1fr);
+    }
+    /* ========== reservation section ========*/
+    .form {
+        overflow: hidden;
+    }
+    .form .shape-2 {
+        right: -80px;
+    }
+    .form .shape-3 {
+        bottom: -30px;
+        left: -30px;
+    }
+    form .input-box{
+        flex-direction: column;
+    }
+    
+    /* ====== foooter section ======== */
+    .footer-section .footer-container {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .center{
+        flex-direction: column;
+    }
+    .center .schedule{
+        width: 100%;
+    }
+    .footer-text  {
+        padding: 2rem 0;
+    }
+}   

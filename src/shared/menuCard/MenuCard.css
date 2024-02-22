@@ -1,0 +1,43 @@
+.menu-card {
+    background-color: var(--container-color);
+    margin-bottom: 1.25rem;
+    border-radius: var(--radius);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    transition: .5s var(--transition);
+}
+.menu-card:hover {
+    transform: translateY(-0.5rem);
+}
+.menu-card img {
+  width: 80px;
+  height: 80px;
+  padding: 3px;
+  border: 2px dashed var(--primary-color);
+  border-radius: 50%;
+}
+.menu-data {
+    width: 100%;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.menu-title, .menu-price{
+    color: var(--primary-color)
+}
+.menu-title {
+    font-size: var(--large-font-size);
+    margin-bottom: .25rem;
+}
+.menu-description {
+    color: var(--text-color);
+    margin-bottom: 0;
+}
+.menu-price {
+    font-size: var(--larger-font-size);
+    border-left: 2px dashed var(--primary-color);
+    padding-left: 1rem;
+}
