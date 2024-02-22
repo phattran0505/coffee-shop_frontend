@@ -12,7 +12,7 @@ function Menu() {
   const [menus, setMenus] = useState([]);
   async function fetchData() {
     try {
-      const res = await fetch("https://resonant-pasca-0871ef.netlify.app/api/v1/menu");
+      const res = await fetch("https://resonant-pasca-0871ef/api/v1/menu.netlify.app");
       const result = await res.json();
       setMenus(result.data);
     } catch (error) {
