@@ -3,9 +3,12 @@
     margin-bottom: 1.25rem;
     border-radius: var(--radius);
     padding: 1rem;
+    transition: .5s var(--transition);
+}
+.menu-card a {
     display: flex;
     align-items: center;
-    transition: .5s var(--transition);
+    text-decoration: none;
 }
 .menu-card:hover {
     transform: translateY(-0.5rem);

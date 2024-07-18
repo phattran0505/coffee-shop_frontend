@@ -1,164 +1,149 @@
-/* ===== Tablet ======== */
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&family=Lobster+Two&display=swap");
 
-@media screen and (min-width:767px) and (max-width: 1024px) {
-    section {
-        padding: 100px 80px;
-    }
-    .container {
-        max-width: 960px;
-    }
-    /* ====== header ===== */
-    header {
-        padding: 15px 80px;
-    }
-    /* ====== about section ===== */
-    .about-img {
-        margin-bottom: 2.5rem;
-    }
-    /* ======== features section ====== */
-    .features-section .features-container{
-        grid-template-columns: repeat(2,1fr);
-    }
-    /* =======  stat section ======= */
-    .stat-container  {
-        grid-template-columns: repeat(2,1fr);
-        row-gap: 3rem;
-    }
-    /* ======== gallery section ======= */
-    .gallery-container {
-        grid-template-columns: repeat(2,1fr);
-    }
-    /* ===== offer section ====== */
-    .slide-img {
-        width: 100%;
-    }
-    .slide-offer {
-        width: 300px;
-        right: 30px
-    }
-    .slide-offer .slide-content {
-        padding: 1.5rem .75rem;
-    }
-    .slide-offer .slide-content .offer-description {
-        margin-bottom: .5rem;
-    }
-    .slide-offer .slide-content button {
-        padding: .5rem 1rem;
-    }
+html *::-webkit-scrollbar {
+  width: 5px;
+}
+html *::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: var(--text-color);
+}
+html *::-webkit-scrollbar-track {
+  background-color: var(--bg-color);
+}
 
-    /* ======== chef section =======*/
-    .chefs {
-        grid-template-columns: repeat(2,1fr);
-    }
+/* ======== CSS VARIABLE ============ */
+:root {
+  --header-height: 5rem;
+  --primary-color: hsl(27, 34%, 59%);
+  --secondary-color: hsl(42, 13%, 34%);
+  --title-color: #fff;
+  --text-color: hsl(0, 0%, 67%);
+  --bg-color: hsl(0, 0%, 8%);
+  --container-color: hsl(0, 0%, 6%);
+  --hsla: hsla(0, 0%, 0%, 0.75);
 
-    /* ======== testimonial section ==========*/
-    .testimonial-description , .testimonial-content {
-        padding: 1rem;
-    }
+  /*  */
 
-    /* ======= footer ========== */
-    .footer-section .footer-container {
-        grid-template-columns: repeat(1,1fr);
-    }
-    .center{
-        margin: 1.5rem 0;
-    }
-}   
-/* ======== Mobile ======== */
+  --body-font: "Kanit", sans-serif;
+  --second-font: "Lobster Two", sans-serif;
+
+  /*  */
+  --biggest-font-size: 4.125rem;
+  --bigger-font-size: 3.125rem;
+  --big-font-size: 2.5rem;
+  --largest-font-size: 1.375rem;
+  --larger-font-size: 1.25rem;
+  --large-font-size: 1.125rem;
+  --normal-font-size: 0.9rem;
+  --h1-font-size: 1.875rem;
+  --h2-font-size: 1.75rem;
+  --h3-font-size: 1.5rem;
+
+  --radius: 0.5rem;
+
+  --transition: ease-in-out;
+}
+
+/* ============ RESET ========= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* =========================== */
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+input,
+textarea,
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--second-font);
+  color: var(--title-color);
+  font-weight: 400;
+  cursor: default;
+}
+li {
+  list-style-type: none;
+  cursor: default;
+}
+p {
+  line-height: 1.8;
+  color: var(--text-color);
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  cursor: default;
+}
+span {
+  cursor: default;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+section {
+  padding: 100px;
+  min-height: 100vh;
+}
+.btn {
+  display: inline-block;
+  border: 2px solid var(--primary-color);
+  border-radius: var(--radius);
+  color: var(--title-color);
+  padding: 1rem 1.5rem;
+  font-size: 0.9rem;
+}
+.btn:hover {
+  background-color: var(--primary-color);
+  color: var(--title-color);
+}
+.btn_active {
+  background-color: var(--primary-color);
+}
+.btn_active:hover {
+  background-color: transparent !important;
+  color: var(--title-color) !important;
+  border: 2px solid var(--primary-color) !important;
+}
+.sub {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.sub h2 {
+  text-transform: capitalize;
+  font-size: var(--big-font-size);
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  section {
+    padding: 100px 30px;
+  }
+
+}
+
 @media screen and (max-width: 767px) {
-    :root {
-        --largest-font-size: 1.25rem;
-        --larger-font-size: 1.125rem;
-        --large-font-size: 1rem;
-        --normal-font-size: 0.8rem;
-        --h1-font-size: 1.5rem;
-        --h2-font-size: 1.375rem;
-        --h3-font-size: 1.25rem;
-    }
-    section {
-        padding: 100px 50px;
-    }
-    .btn {
-        padding: .5rem 1rem;
-    }
-    .container {
-        max-width: 960px;
-    }
-    /* ====== header ===== */
-    header {
-        padding: 15px 50px;
-    }
-    .links {
-        display: none;
-    }
-    .sub-menu{
-        display: flex;
-        align-items: center;
-        justify-content: center; 
-        flex-direction: column;
-    }
-    /* ====== about section ===== */
-    .about-img {
-        margin-bottom: 2.5rem;
-    }
-    /* ======== features section ====== */
-    .features-section .features-container{
-        grid-template-columns: repeat(1,1fr);
-    }
-
-    /* ======= gallery section ======= */
-    .gallery-container {
-        grid-template-columns: repeat(1,1fr);
-    }
-    /* =======  stat section ======= */
-    .stat-container  {
-        grid-template-columns: repeat(1,1fr);
-        row-gap: 3rem;
-    }
-    /* ========== offer section ======= */
-    .slide {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0 1.5rem;
-    }
-    .slide-img {
-        width: 100%;
-    }
-    .slide-offer {
-        width: 100%;
-        right: 0;
-    }
-    /* =========== chefs section ======== */
-    .chefs {
-        grid-template-columns: repeat(1,1fr);
-    }
-    /* ========== reservation section ========*/
-    .form {
-        overflow: hidden;
-    }
-    .form .shape-2 {
-        right: -80px;
-    }
-    .form .shape-3 {
-        bottom: -30px;
-        left: -30px;
-    }
-    form .input-box{
-        flex-direction: column;
-    }
-    
-    /* ====== foooter section ======== */
-    .footer-section .footer-container {
-        grid-template-columns: repeat(1,1fr);
-    }
-    .center{
-        flex-direction: column;
-    }
-    .center .schedule{
-        width: 100%;
-    }
-    .footer-text  {
-        padding: 2rem 0;
-    }
-}   
+  :root {
+    --biggest-font-size: 4rem;
+    --bigger-font-size: 2.5rem;
+    --largest-font-size: 1.375rem;
+    --larger-font-size: 1.25rem;
+    --large-font-size: 1.125rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.3rem;
+    --h3-font-size: 1.2rem;
+    --big-font-size: 2rem;
+    --normal-font-size: 0.9rem;
+  }
+  section {
+    padding: 100px 30px;
+  }
+}

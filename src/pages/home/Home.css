@@ -28,5 +28,6 @@
     gap: 20px;
 }
 .buttons a{
+    display: block;
     color: var(--title-color);
 }

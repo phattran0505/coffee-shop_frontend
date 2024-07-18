@@ -16,7 +16,7 @@ function Stat() {
               <div className="stat-img">
                 <img src={coffeeShop} alt=""></img>
               </div>
-              <p className="stat-number">1500</p>
+              <h1 className="stat-number">1500</h1>
               <p className="stat-description">+ Total Branches</p>
             </div>
   
@@ -24,7 +24,7 @@ function Stat() {
               <div className="stat-img">
                 <img src={coffeeCup} alt=""></img>
               </div>
-              <p className="stat-number">250</p>
+              <h1 className="stat-number">250</h1>
               <p className="stat-description">+ Happy Customers</p>
             </div>
   
@@ -32,7 +32,7 @@ function Stat() {
               <div className="stat-img">
                 <img src={chef} alt=""></img>
               </div>
-              <p className="stat-number">120</p>
+              <h1 className="stat-number">120</h1>
               <p className="stat-description">+ Profesional Chefs</p>
             </div>
   
@@ -40,7 +40,7 @@ function Stat() {
               <div className="stat-img">
                 <img src={experience} alt="" style={{ color: "#fff" }}></img>
               </div>
-              <p className="stat-number">50</p>
+              <h1 className="stat-number">50</h1>
               <p className="stat-description">+ Years Of Experience</p>
             </div>
           </div>

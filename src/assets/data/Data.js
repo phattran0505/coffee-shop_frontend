@@ -35,15 +35,7 @@ export const links = [
   {
     name: 'Home',
     path: 'home',
-  },
-  {
-    name: 'About',
-    path: 'about',
-  },
-  {
-    name: 'Features',
-    path: 'features',
-  },
+  },  
   {
     name: 'Menu',
     path: 'menu',
@@ -53,12 +45,8 @@ export const links = [
     path: 'gallery',
   },
   {
-    name: 'Chefs',
-    path: 'chefs',
-  },
-  {
-    name: 'Testimonials',
-    path: 'testimonials',
+    name: 'Reservation',
+    path: 'reservation',
   },
 ];
 

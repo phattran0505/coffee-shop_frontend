@@ -17,8 +17,8 @@ function Chefs() {
             </div>
           </Col>
           <div className="chefs">
-            {chefs.map((chef) => (
-              <ChefCard chef={chef} />
+            {chefs.map((chef, index) => (
+              <ChefCard chef={chef} key={index} />
             ))}
           </div>
         </Row>

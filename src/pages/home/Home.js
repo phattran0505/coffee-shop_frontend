@@ -1,6 +1,12 @@
 import { Container, Col, Row } from "reactstrap";
-import { Link } from "react-router-dom"
-
+import { Link } from "react-router-dom";
+import About from "../about/About";
+import Features from "../features/Features";
+import Offer from "../../components/offer/Offer";
+import Chefs from "../chefs/Chefs";
+import Testimonials from "../testimonials/Testimonials";
+import Choose from "../../components/choose/Choose";
+import Stat from "../../components/stat/Stat";
 import "./Home.css";
 function Home() {
   return (
@@ -11,25 +17,37 @@ function Home() {
             <Col lg="6">
               <div className="introduce">
                 <div className="home-content">
-                    <h2>welcome to coffee!</h2>
-                    <h1>
-                      discover amazing coffee <br></br> house & get energy
-                    </h1>
-                    <p>
-                      There are many variations of passengers available but the
-                      majority have suffered alteration in some form by injected
-                      humor or randomised words
-                    </p>
+                  <h2>welcome to coffee!</h2>
+                  <h1>
+                    discover amazing coffee <br></br> house & get energy
+                  </h1>
+                  <p>
+                    There are many variations of passengers available but the
+                    majority have suffered alteration in some form by injected
+                    humor or randomised words
+                  </p>
                 </div>
                 <div className="buttons">
-                    <button className="btn btn_active"><Link to="#menu">Check Menu</Link></button>
-                    <button className="btn "><Link to="#book">Book Table</Link></button>
+                  <Link to="/menu">
+                    <button className="btn btn_active">Check Menu</button>
+                  </Link>
+
+                  <Link to="/reservation">
+                    <button className="btn ">Book Table</button>
+                  </Link>
                 </div>
               </div>
             </Col>
           </Row>
         </Container>
       </section>
+      <About />
+      <Choose />
+      <Stat />
+      <Features />
+      <Offer />
+      <Chefs />
+      <Testimonials />
     </>
   );
 }

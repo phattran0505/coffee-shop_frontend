@@ -1,26 +1,15 @@
 import { Container, Col, Row } from "reactstrap";
 
-import { useEffect, useState } from "react";
-
+import { useContext, useEffect } from "react";
+import { ProductContext } from "../../contexts/ProductContext";
 import SubTitle from "../../shared/subTitle/SubTitle";
 import MenuCard from "../../shared/menuCard/MenuCard";
-import Choose from "../../components/choose/Choose";
-import Stat from "../../components/stat/Stat";
 
 import "./Menu.css";
 function Menu() {
-  const [menus, setMenus] = useState([]);
-  async function fetchData() {
-    try {
-      const res = await fetch("https://coffee-shop-backend-1.onrender.com/api/v1/menu");
-      const result = await res.json();
-      setMenus(result.data);
-    } catch (error) {
-      console.log(error);
-    }
-  }
+  const { menus } = useContext(ProductContext);
   useEffect(() => {
-    fetchData();
+    window.scrollTo(0, 0);
   }, []);
   return (
     <>
@@ -34,15 +23,13 @@ function Menu() {
               </div>
             </Col>
             {menus.map((menu) => (
-              <Col lg="6" key={menu.id} >
+              <Col lg="6" key={menu._id}>
                 <MenuCard menu={menu} />
               </Col>
             ))}
           </Row>
         </Container>
       </section>
-      <Choose />
-      <Stat />
     </>
   );
 }

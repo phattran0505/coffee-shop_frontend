@@ -8,7 +8,7 @@
 .slide {
   display: flex !important;
   align-items: center;
-  margin: 0 1.5rem;
+  justify-content: center;
 }
 .slide-img {
   width: 50%;
@@ -52,6 +52,32 @@
 .slide-offer .slide-content button {
   padding: 0.75rem 1.25rem;
 }
-.slick-active .dot{
+.slick-active .dot {
   background-color: var(--primary-color);
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .slide {
+    flex-direction: column;
+  }
+  .slide-img,
+  .slide-offer {
+    width: 70%;
+  }
+  .slide-offer {
+    margin-left: 45px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .slide {
+    flex-direction: column;
+  }
+  .slide-img,
+  .slide-offer {
+    width: 80%;
+  }
+  .slide-offer {
+    margin-left: 30px;
+  }
 }

@@ -1,0 +1,1 @@
+export const BASE_URL = 'https://coffee-shop-backend-pg5o.onrender.com/api/v1'
